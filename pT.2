@@ -51,7 +51,7 @@ while True:
 
 
 
-                                                       #3. practice For loop (Love a little pop culture reference)
+                                                       #3. practice For loop iteration (Love a little pop culture reference)
                                                            
                                                            
                                                            
@@ -60,3 +60,30 @@ names = ["Kelly", "Michelle", "Beyonce"] #make a list and asgin a variable
 for n in names: #for every item or 'n' in that list called names do something
     print(n+",can you handle this?") #something= print that item (n) and add "can you handle it" to it
 print("I don't think they can handle this!") #when you're done with each item print the quote
+
+
+
+                                                        #4. practice For loop repetion
+                                                        
+for items in range(3): #each pass through the loop adds to # of "items" which will equal 0,1,2 and stop at three
+    print("Hello, hello, hello, how low")
+print("Hello, hello hello") 
+                                                        
+                                                         #5. Nested loop to print an F shape
+                                                         
+numbers = [5,2,5,2,2]
+
+for x_count in numbers: #
+    output = ''
+    for count in range(x_count):
+        output += 'x'
+    print(output)                                                         
+                                                       #6. Using lists to find the biggest number
+                                                       
+                                                       
+                                                       numbers = [3,6,3,8,4] #define numbers to look through
+max = numbers[0] #temporarily set max to the first number
+for number in numbers:
+    if number > max: #compare each item in mubers to max over each iteration 
+        max = number #if an item is greater than max it becomes max
+print(max)
