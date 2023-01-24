@@ -87,3 +87,17 @@ for number in numbers:
     if number > max: #compare each item in mubers to max over each iteration 
         max = number #if an item is greater than max it becomes max
 print(max)
+
+
+                                                         #7 Text emoji converter
+                                                         
+message = input(">")
+words = message.split(' ') #.split turns string into seperate parts wherever theres a space
+emojis = { #create a dictionary to create a key value pair w/ emoji and smiley
+    ":)": "😊",
+    ":(": "😢"
+}
+output = ""
+for word in words:
+    output += emojis.get(word, word) + " "
+print(output)
